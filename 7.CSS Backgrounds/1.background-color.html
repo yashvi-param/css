@@ -1,17 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>background-color</title>
     <style>
-        body{
-            background-color: lightblue;
-        }
+      div {
+        background: rgb(0, 128, 0);
+      }
+
+      div.first {
+        background: rgba(0, 128, 0, 0.1);
+      }
+
+      div.second {
+        background: rgba(0, 128, 0, 0.3);
+      }
+
+      div.third {
+        background: rgba(0, 128, 0, 0.6);
+      }
+      /* div {
+        background-color: green;
+      }
+
+      div.first {
+        opacity: 0.1;
+      }
+
+      div.second {
+        opacity: 0.3;
+      }
+
+      div.third {
+        opacity: 0.6;
+      } */
+      /* body {
+        background-color: lightblue;
+      } */
+      /* h1 {
+        background-color: green;
+      }
+
+      div {
+        background-color: lightblue;
+      }
+
+      p {
+        background-color: yellow;
+      } */
     </style>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <p>This page has a light blue background color!</p>
-</body>
+  </head>
+  <body>
+    <!-- <h1>Hello World!</h1>
+    <p>This page has a light blue background color!</p> -->
+    <!-- 
+    <h1>CSS background-color example!</h1>
+    <div>
+      This is a text inside a div element.
+      <p>This paragraph has its own background color.</p>
+      We are still in the div element.
+    </div> -->
+
+    <!-- Opacity / Transparency The opacity property specifies the
+    opacity/transparency of an element. It can take a value from 0.0 - 1.0. The
+    lower value, the more transparent: -->
+    <!-- 
+    <h1>Transparent Boxes</h1>
+
+    <p>
+      When using the opacity property to add transparency to the background of
+      an element, all of its child elements become transparent as well. This can
+      make the text inside a fully transparent element hard to read:
+    </p>
+
+    <div class="first">
+      <h1>opacity 0.1</h1>
+    </div>
+
+    <div class="second">
+      <h1>opacity 0.3</h1>
+    </div>
+
+    <div class="third">
+      <h1>opacity 0.6</h1>
+    </div>
+
+    <div>
+      <h1>opacity 1 (default)</h1>
+    </div> -->
+
+    <!-- If you do not want to apply opacity to child elements, like in our example above, use RGBA color values.  -->
+
+    <h1>Transparent Boxes 2</h1>
+
+    <p>Result with opacity:</p>
+
+    <div style="opacity: 0.1">
+      <h1>10% opacity</h1>
+    </div>
+
+    <div style="opacity: 0.3">
+      <h1>30% opacity</h1>
+    </div>
+
+    <div style="opacity: 0.6">
+      <h1>60% opacity</h1>
+    </div>
+
+    <div>
+      <h1>opacity 1</h1>
+    </div>
+
+    <p>Result with rgba():</p>
+
+    <div class="first">
+      <h1>10% opacity</h1>
+    </div>
+
+    <div class="second">
+      <h1>30% opacity</h1>
+    </div>
+
+    <div class="third">
+      <h1>60% opacity</h1>
+    </div>
+
+    <div>
+      <h1>default</h1>
+    </div>
+
+    <p>
+      Notice how the text gets transparent as well as the background color when
+      using the opacity property.
+    </p>
+  </body>
 </html>
