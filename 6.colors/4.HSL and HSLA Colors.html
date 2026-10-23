@@ -1,30 +1,23 @@
-<!-- Saturation
-Saturation can be described as the intensity of a color.
-
-100% is pure color, no shades of gray.
-
-50% is 50% gray, but you can still see the color.
-
-0% is completely gray; you can no longer see the color. -->
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>hsl lightness</title>
   </head>
   <body>
+    <h1>HSL Lightness</h1>
+
     <p>
-      The second parameter of hsl() defines the saturation. Less saturation mean
-      less color. 0% is completely gray:
+      The third parameter of hsl() defines the lightness. 0% means black, and
+      100% means white:
     </p>
 
+    <h2 style="background-color: hsl(0, 100%, 0%)">hsl(0, 100%, 0%)</h2>
+    <h2 style="background-color: hsl(0, 100%, 25%)">hsl(0, 100%, 25%)</h2>
     <h2 style="background-color: hsl(0, 100%, 50%)">hsl(0, 100%, 50%)</h2>
-    <h2 style="background-color: hsl(0, 80%, 50%)">hsl(0, 80%, 50%)</h2>
-    <h2 style="background-color: hsl(0, 60%, 50%)">hsl(0, 60%, 50%)</h2>
-    <h2 style="background-color: hsl(0, 40%, 50%)">hsl(0, 40%, 50%)</h2>
-    <h2 style="background-color: hsl(0, 20%, 50%)">hsl(0, 20%, 50%)</h2>
-    <h2 style="background-color: hsl(0, 0%, 50%)">hsl(0, 0%, 50%)</h2>
+    <h2 style="background-color: hsl(0, 100%, 75%)">hsl(0, 100%, 75%)</h2>
+    <h2 style="background-color: hsl(0, 100%, 90%)">hsl(0, 100%, 90%)</h2>
+    <h2 style="background-color: hsl(0, 100%, 100%)">hsl(0, 100%, 100%)</h2>
   </body>
 </html>
