@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>border color</title>
     <style>
-      p.one {
+      /* p.one {
         border-style: solid;
         border-color: red;
       }
@@ -16,11 +16,32 @@
       p.three {
         border-style: dotted;
         border-color: blue;
-      }
+      } */
+
+      /* Specific Side Colors */
+      /* p.one{
+        border-style: solid;
+        border-color: red green blue yellow;
+      } */
+
+      /* HEX Values */
+        p.one{
+            border-style: solid;
+            border-color: #ff0000;
+        }
+        p.two{
+             border-style: solid;
+            border-color: #0000ff;
+        }
+        p.three{
+            border-style: solid;
+            border-color: #bbbbbb;
+        }
+
     </style>
   </head>
   <body>
-    <h2>The border color property</h2>
+    <!-- <h2>The border color property</h2>
     <p>This property specifies the color of the four borders:</p>
 
     <p class="one">A solid red color</p>
@@ -30,6 +51,18 @@
     <p>
       <b>Note:</b> The "border-color" property does not work if it is used
       alone. Use the "border-style" property to set the borders first.
-    </p>
+    </p> -->
+    
+
+    <!-- <h2>The border-color property</h2>
+    <p>The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border):</p>
+    <p class="one">A solid multicolor border</p> -->
+
+
+    <h2>The border-color property</h2>
+    <p>The color of the border can also be specified using a hexacimal values(HEX):</p>
+    <p class="one">A solid red color</p>
+    <p class="two">A solid blue color</p>
+    <p class="three">A solid gray color</p>
   </body>
 </html>
