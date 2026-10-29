@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>border sides</title>
+    <title>border sides, Individual, individual four border side</title>
     <style>
       /* p {
         border-top-style: dotted;
@@ -12,16 +12,43 @@
         border-left-style: solid;
       } */
 
-      p{
+      /* p{
         border-style: dotted solid;
-      }
+      } */
+
+      /* Four values */
+p.four {
+  border-style: dotted solid double dashed;
+}
+
+/* Three values */
+p.three {
+  border-style: dotted solid double;
+}
+
+/* Two values */
+p.two {
+  border-style: dotted solid;
+}
+
+/* One value */
+p.one {
+  border-style: dotted;
+}
     </style>
   </head>
   <body>
     <!-- <h2>Individual Border Sides</h2>
     <p>2 different border styles.</p> -->
 
+    <!-- <h2>Individual Border Sides</h2>
+    <p>2 different border styles.</p> -->
+
     <h2>Individual Border Sides</h2>
-    <p>2 different border styles.</p>
+<p class="four">4 different border styles.</p>
+<p class="three">3 different border styles.</p>
+<p class="two">2 different border styles.</p>
+<p class="one">1 border style.</p>
+
   </body>
 </html>
