@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min/Max Height and Width</title>
+    <style>
+      /* .div1 {
+        max-width: 500px;
+        background-color: powderblue;
+        padding: 10px;
+      }
+      .div2 {
+        max-width: 500px;
+        background-color: powderblue;
+        padding: 10px;
+      } */
+
+      .div1 {
+        width: 100%; /* The element will try to be 100% of its parent's width */
+        max-width: 900px; /* But it will never exceed 900px in width */
+        padding: 10px;
+        background-color: powderblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS Min/Max Height and Width 
+    The min-width and max-width properties are used
+    to set the minimum and maximum width of an element. The min-height and
+    max-height properties are used to set the minimum and maximum height of an
+    element. -->
+
+    <!-- CSS Using max-width 
+    The max-width property sets the maximum allowed width of
+    an element. This prevents the width of an element to be larger than the
+    max-width property value. The max-width property can have the following
+    values: length - Defines the maximum width in px, cm, etc. % - Defines the
+    maximum width in percent of the containing block none - This is default.
+    Means that there is no maximum width One problem with the width property can
+    occur when the browser window is smaller than the width of the element. The
+    browser then adds a horizontal scrollbar to the page. So, using max-width
+    will improve the browser's handling on small windows. -->
+
+    <!-- <h2>Max-width vs. width of an element</h2>
+    <p class="div1">this div element has a max-width of 500px</p>
+    <p class="div2">This div element has a width of 500px.</p>
+    <p>
+      Resize the browser window tosmaller than 500px wide to see the effect!
+    </p> -->
+    <!-- 
+    If you use both the width property and the max-width property on the same
+    element, and the value of the width property is larger than the max-width
+    property; the max-width property value will be used! -->
+
+    <h2>Using both max-width and width</h2>
+
+    <p class="div1">
+      This div element has a width of 100% and max-width of 900px.
+    </p>
+
+    <p>
+      Resize the browser window to larger than 900px wide to see the effect!
+    </p>
+  </body>
+</html>
